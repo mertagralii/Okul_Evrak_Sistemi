@@ -17,7 +17,7 @@ namespace Okul_Evrak_Sistemi
         private void getdata()
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From TblEvrak", bgl);
+            SqlDataAdapter da = new SqlDataAdapter("Select * From TblEvrak Where EmanetVerildi=0", bgl);
             da.Fill(dt);
             DTTablo.DataSource = dt;
         }
@@ -26,6 +26,7 @@ namespace Okul_Evrak_Sistemi
             InitializeComponent();
         }
         public string Mkullanici;
+        private int SeciliEvrak;
 
         SqlConnection bgl = new SqlConnection(@"Data Source=Mert;Initial Catalog=OgrenciEvrak;Integrated Security=True");
 
@@ -51,10 +52,11 @@ namespace Okul_Evrak_Sistemi
             }
             bgl.Close();
 
-            DataTable dt = new DataTable(); 
-            SqlDataAdapter da = new SqlDataAdapter("Select * From TblEvrak",bgl);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM TblEvrak WHERE EmanetVerildi = 0", bgl);
             da.Fill(dt);
             DTTablo.DataSource = dt;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -105,6 +107,25 @@ namespace Okul_Evrak_Sistemi
         {
             FrmEmanetListesi fr = new FrmEmanetListesi();
             fr.Show();
+        }
+
+        private void DTTablo_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int SecilenSatir = DTTablo.SelectedCells[0].RowIndex;
+
+            SeciliEvrak = Convert.ToInt32(DTTablo.Rows[SecilenSatir].Cells[0].Value);
+        }
+
+        private void BtnEmanetVer_Click(object sender, EventArgs e)
+        {
+            //secilievrak içerisindeki id değerine göre update işlemi yapılacak
+            bgl.Open();
+            SqlCommand komut = new SqlCommand("Update TBLEvrak set EmanetVerildi = 1  Where İD=@P2", bgl);
+            komut.Parameters.AddWithValue("@P2", SeciliEvrak);
+            komut.ExecuteNonQuery();
+            bgl.Close();
+            MessageBox.Show("Evrak Eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            getdata() ;
         }
     }
 }

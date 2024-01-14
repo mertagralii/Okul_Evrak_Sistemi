@@ -71,6 +71,7 @@
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(460, 32);
             this.TxtSifre.TabIndex = 19;
+            this.TxtSifre.Text = "999999";
             // 
             // label2
             // 
@@ -90,6 +91,7 @@
             this.TxtMemurGiris.Name = "TxtMemurGiris";
             this.TxtMemurGiris.Size = new System.Drawing.Size(460, 32);
             this.TxtMemurGiris.TabIndex = 17;
+            this.TxtMemurGiris.Text = "KELES";
             // 
             // pictureBox1
             // 

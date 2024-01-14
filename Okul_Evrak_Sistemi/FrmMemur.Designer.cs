@@ -228,6 +228,7 @@
             this.DTTablo.RowHeadersWidth = 51;
             this.DTTablo.Size = new System.Drawing.Size(911, 342);
             this.DTTablo.TabIndex = 0;
+            this.DTTablo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTTablo_CellClick);
             // 
             // groupBox3
             // 
@@ -244,9 +245,9 @@
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Location = new System.Drawing.Point(935, 12);
+            this.groupBox3.Location = new System.Drawing.Point(953, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(593, 405);
+            this.groupBox3.Size = new System.Drawing.Size(575, 405);
             this.groupBox3.TabIndex = 20;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Emanet Alma/ Verme";
@@ -269,6 +270,7 @@
             this.BtnEmanetVer.TabIndex = 84;
             this.BtnEmanetVer.Text = "Emanet Ver";
             this.BtnEmanetVer.UseVisualStyleBackColor = true;
+            this.BtnEmanetVer.Click += new System.EventHandler(this.BtnEmanetVer_Click);
             // 
             // textBox1
             // 
@@ -308,7 +310,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(278, 21);
+            this.pictureBox3.Location = new System.Drawing.Point(252, 18);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 82);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -446,7 +448,7 @@
             this.groupBox4.Controls.Add(this.label16);
             this.groupBox4.Location = new System.Drawing.Point(462, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(454, 405);
+            this.groupBox4.Size = new System.Drawing.Size(495, 405);
             this.groupBox4.TabIndex = 22;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Evrak Ekleme";
@@ -476,7 +478,7 @@
             // 
             // BtnEvrakEkle
             // 
-            this.BtnEvrakEkle.Location = new System.Drawing.Point(163, 357);
+            this.BtnEvrakEkle.Location = new System.Drawing.Point(163, 339);
             this.BtnEvrakEkle.Name = "BtnEvrakEkle";
             this.BtnEvrakEkle.Size = new System.Drawing.Size(126, 28);
             this.BtnEvrakEkle.TabIndex = 72;
@@ -556,11 +558,11 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(56, 383);
+            this.label18.Location = new System.Drawing.Point(-4, 378);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(70, 24);
+            this.label18.Size = new System.Drawing.Size(520, 24);
             this.label18.TabIndex = 76;
-            this.label18.Text = "label18";
+            this.label18.Text = "Evrak Eklemeden önce lütfen tablodan eklenecek stünü seçin";
             // 
             // FrmMemur
             // 

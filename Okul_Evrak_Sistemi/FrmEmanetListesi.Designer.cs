@@ -56,6 +56,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1357, 589);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label1
             // 
@@ -81,8 +82,9 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Teslim Al";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // frmemanetliste
+            // FrmEmanetListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,8 +94,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmemanetliste";
+            this.Name = "FrmEmanetListesi";
             this.Text = "frmemanetliste";
+            this.Load += new System.EventHandler(this.FrmEmanetListesi_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
