@@ -66,6 +66,7 @@
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(336, 32);
             this.TxtSifre.TabIndex = 12;
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // label2
             // 

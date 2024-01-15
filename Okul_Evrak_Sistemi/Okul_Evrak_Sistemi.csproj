@@ -79,11 +79,11 @@
     <Compile Include="FrmMemurİslemleri.Designer.cs">
       <DependentUpon>FrmMemurİslemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmogrenci.cs">
+    <Compile Include="FrmOgrenci.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmogrenci.Designer.cs">
-      <DependentUpon>frmogrenci.cs</DependentUpon>
+    <Compile Include="FrmOgrenci.Designer.cs">
+      <DependentUpon>FrmOgrenci.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmOgrenciGiris.cs">
       <SubType>Form</SubType>
@@ -120,8 +120,8 @@
     <EmbeddedResource Include="FrmMemurİslemleri.resx">
       <DependentUpon>FrmMemurİslemleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmogrenci.resx">
-      <DependentUpon>frmogrenci.cs</DependentUpon>
+    <EmbeddedResource Include="FrmOgrenci.resx">
+      <DependentUpon>FrmOgrenci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOgrenciGiris.resx">
       <DependentUpon>FrmOgrenciGiris.cs</DependentUpon>

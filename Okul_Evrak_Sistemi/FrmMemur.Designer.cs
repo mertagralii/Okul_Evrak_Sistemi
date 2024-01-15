@@ -46,17 +46,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnEmanetListesi = new System.Windows.Forms.Button();
             this.BtnEmanetVer = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.CmbEvrakYeri = new System.Windows.Forms.ComboBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -65,6 +55,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.CmbEvrakDepartman = new System.Windows.Forms.ComboBox();
             this.MskTeslimEdenTC = new System.Windows.Forms.MaskedTextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -77,7 +68,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -88,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -159,6 +151,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(177, 32);
             this.textBox2.TabIndex = 8;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // BtnŞifreGüncelle
             // 
@@ -192,7 +185,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(106, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(444, 405);
             this.groupBox1.TabIndex = 11;
@@ -234,29 +227,19 @@
             // 
             this.groupBox3.Controls.Add(this.BtnEmanetListesi);
             this.groupBox3.Controls.Add(this.BtnEmanetVer);
-            this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Controls.Add(this.textBox4);
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.textBox6);
-            this.groupBox3.Controls.Add(this.textBox7);
             this.groupBox3.Controls.Add(this.pictureBox3);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Location = new System.Drawing.Point(953, 12);
+            this.groupBox3.Location = new System.Drawing.Point(1154, 9);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(575, 405);
+            this.groupBox3.Size = new System.Drawing.Size(319, 405);
             this.groupBox3.TabIndex = 20;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Emanet Alma/ Verme";
             // 
             // BtnEmanetListesi
             // 
-            this.BtnEmanetListesi.Location = new System.Drawing.Point(426, 210);
+            this.BtnEmanetListesi.Location = new System.Drawing.Point(98, 172);
             this.BtnEmanetListesi.Name = "BtnEmanetListesi";
-            this.BtnEmanetListesi.Size = new System.Drawing.Size(148, 59);
+            this.BtnEmanetListesi.Size = new System.Drawing.Size(148, 65);
             this.BtnEmanetListesi.TabIndex = 85;
             this.BtnEmanetListesi.Text = "Emanet Listesi";
             this.BtnEmanetListesi.UseVisualStyleBackColor = true;
@@ -264,103 +247,23 @@
             // 
             // BtnEmanetVer
             // 
-            this.BtnEmanetVer.Location = new System.Drawing.Point(265, 346);
+            this.BtnEmanetVer.Location = new System.Drawing.Point(98, 271);
             this.BtnEmanetVer.Name = "BtnEmanetVer";
-            this.BtnEmanetVer.Size = new System.Drawing.Size(139, 39);
+            this.BtnEmanetVer.Size = new System.Drawing.Size(146, 62);
             this.BtnEmanetVer.TabIndex = 84;
             this.BtnEmanetVer.Text = "Emanet Ver";
             this.BtnEmanetVer.UseVisualStyleBackColor = true;
             this.BtnEmanetVer.Click += new System.EventHandler(this.BtnEmanetVer_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(252, 307);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 32);
-            this.textBox1.TabIndex = 83;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(252, 256);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(152, 32);
-            this.textBox4.TabIndex = 82;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(252, 206);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 32);
-            this.textBox5.TabIndex = 81;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(252, 155);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 32);
-            this.textBox6.TabIndex = 80;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(252, 109);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(152, 32);
-            this.textBox7.TabIndex = 79;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(252, 18);
+            this.pictureBox3.Location = new System.Drawing.Point(114, 50);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 82);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 73;
             this.pictureBox3.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(111, 315);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 24);
-            this.label8.TabIndex = 78;
-            this.label8.Text = "Teslim Tarih :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(115, 112);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 24);
-            this.label10.TabIndex = 74;
-            this.label10.Text = "Teslim Alan :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(65, 259);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(166, 24);
-            this.label11.TabIndex = 77;
-            this.label11.Text = "Evrak Departman :";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(110, 158);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(121, 24);
-            this.label12.TabIndex = 75;
-            this.label12.Text = "Teslim Eden :";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(61, 205);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(175, 24);
-            this.label13.TabIndex = 76;
-            this.label13.Text = "Teslim Alan TC NO :";
             // 
             // groupBox2
             // 
@@ -446,12 +349,21 @@
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Location = new System.Drawing.Point(462, 12);
+            this.groupBox4.Location = new System.Drawing.Point(608, 12);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(495, 405);
             this.groupBox4.TabIndex = 22;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Evrak Ekleme";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(-4, 378);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(520, 24);
+            this.label18.TabIndex = 76;
+            this.label18.Text = "Evrak Eklemeden önce lütfen tablodan eklenecek stünü seçin";
             // 
             // CmbEvrakDepartman
             // 
@@ -478,7 +390,7 @@
             // 
             // BtnEvrakEkle
             // 
-            this.BtnEvrakEkle.Location = new System.Drawing.Point(163, 339);
+            this.BtnEvrakEkle.Location = new System.Drawing.Point(163, 347);
             this.BtnEvrakEkle.Name = "BtnEvrakEkle";
             this.BtnEvrakEkle.Size = new System.Drawing.Size(126, 28);
             this.BtnEvrakEkle.TabIndex = 72;
@@ -555,14 +467,16 @@
             this.label16.TabIndex = 64;
             this.label16.Text = "Teslim Eden TC NO :";
             // 
-            // label18
+            // pictureBox2
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(-4, 378);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(520, 24);
-            this.label18.TabIndex = 76;
-            this.label18.Text = "Evrak Eklemeden önce lütfen tablodan eklenecek stünü seçin";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 67);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // FrmMemur
             // 
@@ -570,6 +484,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1530, 853);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
@@ -587,7 +502,6 @@
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DTTablo)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -595,6 +509,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -633,17 +548,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button BtnEmanetVer;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button BtnEmanetListesi;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -651,5 +556,6 @@
         private System.Windows.Forms.ComboBox CmbEvrakDepartman;
         private System.Windows.Forms.ComboBox CmbEvrakYeri;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

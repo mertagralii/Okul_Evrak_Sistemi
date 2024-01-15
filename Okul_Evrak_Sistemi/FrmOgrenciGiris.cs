@@ -32,7 +32,7 @@ namespace Okul_Evrak_Sistemi
             SqlDataReader dr = komut.ExecuteReader();
             if (dr.Read())
             {
-                frmogrenci frm = new frmogrenci();
+                FrmOgrenci frm = new FrmOgrenci();
                 frm.Show();
                 this.Hide();
             }

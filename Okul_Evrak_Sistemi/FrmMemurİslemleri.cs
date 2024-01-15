@@ -98,5 +98,13 @@ namespace Okul_Evrak_Sistemi
             textBox12.Text = dataGridView1.Rows[secilen].Cells[7].Value.ToString();
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FrmSekreter frm = new FrmSekreter();
+            frm.Show();
+            this.Hide();
+
+        }
     }
 }

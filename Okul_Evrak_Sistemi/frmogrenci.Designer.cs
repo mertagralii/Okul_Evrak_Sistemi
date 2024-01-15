@@ -1,6 +1,6 @@
 ﻿namespace Okul_Evrak_Sistemi
 {
-    partial class frmogrenci
+    partial class FrmOgrenci
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmogrenci));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOgrenci));
             this.button1 = new System.Windows.Forms.Button();
             this.TxtTalepSebep = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,7 +44,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.MskTel = new System.Windows.Forms.MaskedTextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -183,12 +185,24 @@
             this.MskTel.Size = new System.Drawing.Size(286, 22);
             this.MskTel.TabIndex = 48;
             // 
-            // frmogrenci
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 67);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 49;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // FrmOgrenci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1295, 862);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.MskTel);
             this.Controls.Add(this.MskTC);
             this.Controls.Add(this.button1);
@@ -204,9 +218,10 @@
             this.Controls.Add(this.TxtAd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "frmogrenci";
+            this.Name = "FrmOgrenci";
             this.Text = "frmogrenci";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,5 +244,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MaskedTextBox MskTC;
         private System.Windows.Forms.MaskedTextBox MskTel;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

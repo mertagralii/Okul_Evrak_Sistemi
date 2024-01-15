@@ -70,7 +70,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.DTTablo2 = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.BtnMemurİşlemleri = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.CmbEvrakTürü = new System.Windows.Forms.ComboBox();
@@ -84,6 +83,8 @@
             this.BtnEvrakSil = new System.Windows.Forms.Button();
             this.TxtEvrakNo2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -92,11 +93,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTTablo2)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -111,9 +113,9 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(114, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(426, 380);
+            this.groupBox1.Size = new System.Drawing.Size(396, 380);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sekreter Kişisel Bilgiler";
@@ -174,6 +176,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(177, 22);
             this.textBox5.TabIndex = 18;
+            this.textBox5.UseSystemPasswordChar = true;
             // 
             // label8
             // 
@@ -229,9 +232,9 @@
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label25);
-            this.groupBox3.Location = new System.Drawing.Point(671, 24);
+            this.groupBox3.Location = new System.Drawing.Point(574, 24);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(382, 368);
+            this.groupBox3.Size = new System.Drawing.Size(382, 376);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Evrak Ekle";
@@ -514,19 +517,9 @@
             this.DTTablo2.Size = new System.Drawing.Size(1054, 359);
             this.DTTablo2.TabIndex = 0;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.BtnMemurİşlemleri);
-            this.groupBox2.Location = new System.Drawing.Point(444, 24);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(221, 368);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Memur İşlemleri";
-            // 
             // BtnMemurİşlemleri
             // 
-            this.BtnMemurİşlemleri.Location = new System.Drawing.Point(16, 139);
+            this.BtnMemurİşlemleri.Location = new System.Drawing.Point(35, 47);
             this.BtnMemurİşlemleri.Name = "BtnMemurİşlemleri";
             this.BtnMemurİşlemleri.Size = new System.Drawing.Size(186, 46);
             this.BtnMemurİşlemleri.TabIndex = 34;
@@ -542,9 +535,9 @@
             this.groupBox6.Controls.Add(this.TxtEvrakNo);
             this.groupBox6.Controls.Add(this.label12);
             this.groupBox6.Controls.Add(this.label18);
-            this.groupBox6.Location = new System.Drawing.Point(1060, 27);
+            this.groupBox6.Location = new System.Drawing.Point(1003, 27);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(250, 370);
+            this.groupBox6.Size = new System.Drawing.Size(250, 373);
             this.groupBox6.TabIndex = 7;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Evrak Türü Ekle";
@@ -616,9 +609,9 @@
             this.groupBox7.Controls.Add(this.BtnEvrakSil);
             this.groupBox7.Controls.Add(this.TxtEvrakNo2);
             this.groupBox7.Controls.Add(this.label2);
-            this.groupBox7.Location = new System.Drawing.Point(1310, 27);
+            this.groupBox7.Location = new System.Drawing.Point(1281, 27);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(250, 370);
+            this.groupBox7.Size = new System.Drawing.Size(250, 232);
             this.groupBox7.TabIndex = 8;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Evrak Sil";
@@ -660,12 +653,34 @@
             this.label2.TabIndex = 40;
             this.label2.Text = "Evrak NO :";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.BtnMemurİşlemleri);
+            this.groupBox2.Location = new System.Drawing.Point(1281, 268);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(251, 132);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Memur İşlemleri";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(8, 27);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 67);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 24;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
             // FrmSekreter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1573, 798);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox2);
@@ -687,13 +702,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DTTablo2)).EndInit();
-            this.groupBox2.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -735,7 +751,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button BtnMemurİşlemleri;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button BtnEvrakTürüEkle;
@@ -755,5 +770,7 @@
         private System.Windows.Forms.ComboBox CmbEvrakDepartman4;
         private System.Windows.Forms.ComboBox CmbEvrakTürü;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

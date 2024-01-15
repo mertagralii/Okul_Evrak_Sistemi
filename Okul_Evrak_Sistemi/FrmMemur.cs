@@ -16,7 +16,7 @@ namespace Okul_Evrak_Sistemi
     {
         private void getdata()
         {
-            DataTable dt = new DataTable();
+            DataTable dt = new DataTable(); 
             SqlDataAdapter da = new SqlDataAdapter("Select * From TblEvrak Where EmanetVerildi=0", bgl);
             da.Fill(dt);
             DTTablo.DataSource = dt;
@@ -85,7 +85,7 @@ namespace Okul_Evrak_Sistemi
             komut3.Parameters.AddWithValue("P6", İD);
             komut3.ExecuteNonQuery();
             bgl.Close();
-
+            MessageBox.Show("Evrak Ekleme işlemi gerçekleştirildi.","Bilgilendirme",MessageBoxButtons.OK,MessageBoxIcon.Information);
             getdata();
         }
 
@@ -99,6 +99,7 @@ namespace Okul_Evrak_Sistemi
             güncelleme.Parameters.AddWithValue("@P3", İD); 
             güncelleme.ExecuteNonQuery();
             bgl.Close();
+            MessageBox.Show("Evrak Güncelleme işlemi Gerçekleştirildi.","Bilgilendirme",MessageBoxButtons.OK,MessageBoxIcon.Information);
             getdata() ;
 
         }
@@ -126,6 +127,13 @@ namespace Okul_Evrak_Sistemi
             bgl.Close();
             MessageBox.Show("Evrak Eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             getdata() ;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ArsivYönetimSistemi frm = new ArsivYönetimSistemi();
+            frm.Show();
+            this.Hide();
         }
     }
 }

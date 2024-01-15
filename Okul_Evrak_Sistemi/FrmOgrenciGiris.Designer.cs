@@ -92,6 +92,7 @@
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(336, 32);
             this.TxtSifre.TabIndex = 5;
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // BtnGirisYap
             // 

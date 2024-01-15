@@ -116,6 +116,7 @@ namespace Okul_Evrak_Sistemi
 
         private void BtnEvrakGüncelle_Click(object sender, EventArgs e)
         {
+            bgl.Open();
             int İD = Convert.ToInt32(DTTablo2.SelectedRows[0].Cells[0].Value);
             SqlCommand komut4 = new SqlCommand("Update TBLEvrak Set TeslimAlan=@P1,TeslimEden=@P2, EvrakNO=@P3,TeslimEdenTC=@P4,EvrakDepartman=@P5,TeslimEdilecekTarih=@P6 Where İD=@P7", bgl);
             komut4.Parameters.AddWithValue("@P1", TxtTeslimAlan2.Text);
@@ -125,10 +126,18 @@ namespace Okul_Evrak_Sistemi
             komut4.Parameters.AddWithValue("@P5", CmbEvrakDepartman4.Text);
             komut4.Parameters.AddWithValue("@P6", dateTimePicker2.Value);
             komut4.Parameters.AddWithValue("@P7", İD);
+            komut4.ExecuteNonQuery();
             bgl.Close();
             MessageBox.Show("Güncelleme İşlemi Başarıyla Gerçekleştirildi.", "Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
             getdata();
 
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            ArsivYönetimSistemi frm = new ArsivYönetimSistemi();
+            frm.Show();
+            this.Hide();
         }
     }
 }
